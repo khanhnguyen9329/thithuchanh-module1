@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+function insertNumberToArray(array,x,index) {
+for (let i = 0; i <= array.length; i++) {
+if (i == index) {
+for (let j = (array.length - 1); j >= i; j--) {
+array[j + 1] = array[j];
+}
+array[i] = x;
+}
+}
+return array
+}
+let arr = [1,2,3,4,5,6]
+let x = +prompt("nhập số2")
+let index = +prompt("nhập số");
+
+let result = insertNumberToArray(arr, x, index);
+document.write(result)
+</script>
+</body>
+</html>

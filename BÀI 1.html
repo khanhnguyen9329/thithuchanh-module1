@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function finAvg(arr) {
+        let sum
+        let a = 0
+        for (let i = 0; i < arr.length; i++) {
+            a += arr[i]
+        }
+        sum = a / arr.length
+        return sum
+    }
+
+    let arr1 = [7, 8, 9, 10, 5, 4]
+    let c = finAvg(arr1)
+    document.write("trung bình = " + c.toFixed(3))
+</script>
+</body>
+</html>
